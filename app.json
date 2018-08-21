@@ -1,0 +1,6 @@
+{
+    "name": "Start on Heroku: Node.js",
+    "description": "A barebones Node.js app that makes use of the Silex web framework",
+    "repository": "",
+    "addons": []
+}
