@@ -48,11 +48,12 @@
 
     ```js
     var http = require('http')
+    var PORT = process.env.PORT || 5000
 
     http.createServer(function (request, response) {
         response.writeHead(200, {"Content-Type": "text/plain"})
         response.end("Hello World\n")
-    }).listen(process.env.PORT)
+    }).listen(PORT, () => console.log(`Listeing on ${ PORT }`))
     ```
 
 4. git リポジトリと heroku app を作成，リモートに push する
